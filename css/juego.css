@@ -29,6 +29,7 @@ li::before {
   margin: 0;
   vertical-align: top;
 }
+
 .col-40 {
   background: #FFF;
   padding: 30px;
@@ -37,7 +38,13 @@ li::before {
 
 .col-60 {
   background: #E84A5F;
+  width: 60%;
+  height: 75%;
+  
+}
 
+.pieza {
+  float: left;
 }
 
 #flecha{
