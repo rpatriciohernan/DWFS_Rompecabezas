@@ -1,4 +1,9 @@
 /*Código armado por La Foca Loca S.A. No modificar*/
+* {
+  padding:0;
+  margin:0;
+}
+
 body {
   font-family: Arial, sans-serif;
   width: 940px;
@@ -11,7 +16,7 @@ ul {
   list-style: none;
 }
 li {
-  padding: 5px 0;
+  padding: 0;
   animation: fadein 5s;
 }
 li::before {
@@ -27,24 +32,44 @@ li::before {
 .col-40, .col-60 {
   display: table-cell;
   margin: 0;
-  vertical-align: top;
+  padding:0;
+  vertical-align: center;
 }
 
 .col-40 {
+  vertical-align: top;
   background: #FFF;
-  padding: 30px;
   color: #000;
+  padding:0;
 }
 
 .col-60 {
-  background: #E84A5F;
+  background-color: #E84A5F;
   width: 60%;
   height: 75%;
-  
+}
+
+#instrucciones {
+  padding:0;
+}
+
+#juego {
+  width:600px;
+  height:600px;
 }
 
 .pieza {
+  box-sizing:border-box;
   float: left;
+  width:33.33%;
+  height:33.33%;
+}
+
+.pieza img {
+  box-sizing:border-box;
+  width:100%;
+  height:100%;
+  border: 1px solid white; 
 }
 
 #flecha{
@@ -55,9 +80,26 @@ li::before {
   text-align: center;
 }
 
+#objetivo img {
+  width:60%;
+  height:60%;
+  padding:4%;
+}
+
 #juego div {
   text-align: center;
   animation: fadein 2s;
+}
+
+#cartelGanador {
+  text-align: center;
+  width:100%;
+}
+
+#cartelGanador img {
+  width:60%;
+  height:60%;
+  padding:4%;
 }
 
 @keyframes fadein {
