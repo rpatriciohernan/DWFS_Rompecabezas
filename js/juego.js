@@ -1,5 +1,5 @@
 // Arreglo que contiene las intrucciones del juego 
-var instrucciones = ["Mueve las piezas con tu teclado", "Logra que la imagen quede como el ejemplo"];
+var instrucciones = ["Move las piezas con tu teclado", "Logra que la imagen quede como el objetivo"];
 // Arreglo para ir guardando los movimientos que se vayan realizando
 var movimientos = [];
 
@@ -66,10 +66,12 @@ function chequearSiGano() {
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
     document.getElementById("cartelGanador").hidden = false;
+    document.getElementById("ultimo-mov").hidden = true;
 }
 
 function ocultarCartelGanador(){
   document.getElementById("cartelGanador").hidden = true;
+  document.getElementById("ultimo-mov").hidden = false;
 }
 
 /* Función que intercambia dos posiciones en la grilla.
